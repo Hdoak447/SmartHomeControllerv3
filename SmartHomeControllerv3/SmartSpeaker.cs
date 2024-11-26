@@ -32,5 +32,12 @@ namespace SmartHomeController
 
         }
 
+        public virtual void GetStatus()
+        {
+            base.GetStatus();
+            Console.WriteLine("This is a smart speaker.")
+            Console.WriteLine($"Volume: {Volume}, Play Status (Yes or No): {(isPlaying ? "Yes" : "No")}"); //Capitalise as getting the public variable 
+        }
+
     }
 }

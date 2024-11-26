@@ -43,5 +43,12 @@ namespace SmartHomeController
             this.Colour = colour;
             Console.WriteLine($"Colour now set to {Colour}");
         }
+
+        public virtual void GetStatus()
+        {
+            base.GetStatus();
+            Console.WriteLine("This is a smart light.")
+            Console.WriteLine($"Brightness: {Brightness}%, Colour: {Colour}"); //Capitalise as getting the public variable 
+        }
     }
 }
